@@ -1,0 +1,19 @@
+.table {
+  margin: 0px auto;
+  padding: 0;
+  border: 0 solid #ccc;
+  vertical-align: baseline;
+  text-align: inherit;
+  border-collapse: collapse;
+  table-layout: auto;
+  animation: componentMount .5s ease-in 1;
+}
+
+@keyframes componentMount {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

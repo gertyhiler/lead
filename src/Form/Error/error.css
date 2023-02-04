@@ -1,0 +1,34 @@
+.form__error {
+  animation: componentMount .3s ease-in 1;
+}
+
+.errorbox_all {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(249, 93, 81);
+  padding-top: 10px;
+  text-align: center;
+}
+
+.form__errorbox_text {
+  color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.form__errorbox_item {
+  padding-top: 10px;
+}
+
+@keyframes componentMount {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

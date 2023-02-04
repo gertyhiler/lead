@@ -1,0 +1,19 @@
+.thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-top-color: inherit;
+  border-right-color: inherit;
+  border-bottom-color: inherit;
+  border-left-color: inherit;
+}
+.th {
+  padding: 20px;
+  vertical-align: top;
+  margin: 0;
+  border: 0 solid #ccc;
+  vertical-align: baseline;
+  text-align: inherit;
+}
+.title {
+  
+}
