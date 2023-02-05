@@ -1,5 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const copyWebpackPlugin = require('copy-webpack-plugin');
 
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'developer';
@@ -50,6 +51,11 @@ module.exports = {
       template: path.resolve(__dirname, 'index.html'),
       favicon: path.resolve(__dirname, 'favicon.ico'),
     }),
+    new copyWebpackPlugin({
+      patterns: [
+      { from: path.resolve(__dirname, 'src/data.json') },
+      ]
+      }),
   ],
 
   devServer: {
