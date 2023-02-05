@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { dataContext } from "./context/formContext";
 import { Footer } from "./Footer";
@@ -7,8 +8,7 @@ import { Loading } from "./Loading";
 import { Table } from "./Table";
 
 
-
- export function App() {
+export function App() {
   const [loading, setLoading] = useState<Boolean>(false);
   
   const data = useTableData();

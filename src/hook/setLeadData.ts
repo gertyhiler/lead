@@ -20,7 +20,7 @@ interface Response {
 export async function setLeadData(data:FormLeadData) {
   let response: Result = {result: 'Ничего не произошло', status: null};
   
-  const name = useUserName(data.email);
+  const name = await useUserName(data.email);
   if (name === null){
     console.error('Нет определения для данного мейла');
     return {result: 'Нет определения для данного мейла', status: 'Err'};
