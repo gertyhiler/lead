@@ -88,17 +88,18 @@ export function Form() {
 
           <form className={styles.form} onSubmit={submitHendler}
             ref={formRef}
-            id='form_1'>
+            id='form_1'
+            autoComplete={"true"}>
             <div className={styles.form_inputbox}>
               <div className={styles.input_group}>
                 
                 <div className={styles.input_block}>
                   <input type="email" name='leadCount' className={styles.input}
-                    placeholder='E-mail'
+                    placeholder='E-mail' autoComplete='email'
                     ref={emailRef} />
                 </div>
                 <div className={styles.input_block}>
-                  <input type="number" name='leadCount' className={styles.input}
+                  <input type="tel" name='leadCount' autoComplete='none' className={styles.input}
                     placeholder='Кол-во лидов'
                     ref={leadCountRef} />
                 </div>

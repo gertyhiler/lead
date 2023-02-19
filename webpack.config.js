@@ -49,11 +49,14 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({ 
       template: path.resolve(__dirname, 'index.html'),
-      favicon: path.resolve(__dirname, 'favicon.ico'),
+      favicon: path.resolve(__dirname, 'images/favicon.ico'),
     }),
     new copyWebpackPlugin({
       patterns: [
       { from: path.resolve(__dirname, 'src/data.json') },
+      { from: path.resolve(__dirname, 'images'), to: 'images' },
+      { from: path.resolve(__dirname, 'manifest.json') },
+      { from: path.resolve(__dirname, 'sw.js') },
       ]
       }),
   ],

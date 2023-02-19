@@ -7,6 +7,9 @@ export function Footer() {
       <p>
       © Creator by <a href='https://t.me/bananawinst' target='_blank' className={styles.link}>Andrey Korobka</a>
       </p>
+      <p>
+        v1.0.3
+      </p>
     </section>
   );
 }
